@@ -1,0 +1,916 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Profile - Harivandhana Ravikanti</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.profile-container {
+				display: flex;
+				gap: 2rem;
+				padding: 2rem;
+				max-width: 1400px;
+				margin: 0 auto;
+			}
+
+			.profile-sidebar {
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 15px;
+				padding: 2.5rem;
+				width: 350px;
+				flex-shrink: 0;
+				text-align: center;
+				border: 1px solid rgba(255, 255, 255, 0.1);
+			}
+
+			.profile-image {
+				width: 200px;
+				height: 200px;
+				border-radius: 15px;
+				margin: 0 auto 1.5rem;
+				overflow: hidden;
+				border: 3px solid #f9ca24;
+			}
+
+			.profile-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.profile-name {
+				font-size: 18px;
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+				color: #ffffff;
+			}
+
+			.profile-title {
+				color: #aaa;
+			    font-size: 15px;
+                margin-left: 12px;
+			}
+
+			.contact-info {
+				text-align: left;
+				margin: 2rem 0;
+			}
+
+			.contact-item {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				margin-bottom: 1.5rem;
+				padding: 0.5rem;
+			}
+
+			.contact-icon {
+				width: 40px;
+				height: 40px;
+				background: #f9ca24;
+				border-radius: 8px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-shrink: 0;
+			}
+
+			.contact-icon i {
+				color: #000;
+				font-size: 1.2rem;
+			}
+
+			.contact-details {
+				flex-grow: 1;
+			}
+
+			.contact-label {
+				font-size: 0.75rem;
+				color: #888;
+				text-transform: uppercase;
+				margin-bottom: 0.25rem;
+			}
+
+			.contact-value {
+				color: #fff;
+				font-size: 0.9rem;
+				word-break: break-word;
+			}
+
+			.social-links {
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				margin: 2rem 0;
+			}
+
+			.social-links a {
+				width: 45px;
+				height: 45px;
+				background: rgba(255, 255, 255, 0.1);
+				border-radius: 8px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: all 0.3s;
+				border: 1px solid rgba(255, 255, 255, 0.1);
+			}
+
+			.social-links a:hover {
+				background: #f9ca24;
+				transform: translateY(-3px);
+			}
+
+			.social-links a i {
+				color: #fff;
+			}
+
+			.social-links a:hover i {
+				color: #000;
+			}
+
+			.download-cv {
+				background: #f9ca24;
+				color: #000;
+				padding: 1rem 2rem;
+				border-radius: 25px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				transition: all 0.3s;
+				border: none;
+				cursor: pointer;
+				text-decoration: none;
+                width: 280px;
+			}
+
+			.download-cv:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 10px 25px rgba(249, 202, 36, 0.3);
+			}
+
+			.profile-main {
+				flex-grow: 1;
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 15px;
+				padding: 3rem;
+				border: 1px solid rgba(255, 255, 255, 0.1);
+			}
+
+			.section-header {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				margin-bottom: 2rem;
+			}
+
+			.section-title {
+				font-size: 2rem;
+				font-weight: 700;
+				color: #fff;
+				border-bottom: 3px solid #f9ca24;
+				padding-bottom: 0.5rem;
+			}
+
+			.about-text {
+				color: #ccc;
+				line-height: 1.8;
+				margin-bottom: 2rem;
+				font-size: 1.05rem;
+			}
+
+			.stats-container {
+				display: flex;
+				gap: 3rem;
+				margin: 3rem 0;
+			}
+
+			.stat-box {
+				text-align: center;
+			}
+
+			.stat-icon {
+				width: 70px;
+				height: 70px;
+				background: rgba(249, 202, 36, 0.1);
+				border-radius: 12px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto 1rem;
+				border: 2px solid #f9ca24;
+			}
+
+			.stat-icon i {
+				color: #f9ca24;
+				font-size: 2rem;
+			}
+
+			.stat-number {
+				font-size: 2.5rem;
+				font-weight: 700;
+				color: #f9ca24;
+				margin-bottom: 0.5rem;
+			}
+
+			.stat-label {
+				color: #aaa;
+				font-size: 0.9rem;
+				text-transform: uppercase;
+			}
+
+			.skills-grid {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem;
+				margin-top: 2rem;
+			}
+
+			.skill-badge {
+				background: rgba(255, 255, 255, 0.05);
+				border: 1px solid rgba(249, 202, 36, 0.3);
+				padding: 0.8rem 1.5rem;
+				border-radius: 25px;
+				color: #f9ca24;
+				font-weight: 600;
+				text-transform: uppercase;
+				font-size: 0.85rem;
+				letter-spacing: 1px;
+				transition: all 0.3s;
+			}
+
+			.skill-badge:hover {
+				background: rgba(249, 202, 36, 0.1);
+				border-color: #f9ca24;
+				transform: translateY(-2px);
+			}
+
+			.powered-by {
+				position: fixed;
+				top: 1rem;
+				right: 1rem;
+				background: rgba(0, 0, 0, 0.8);
+				padding: 0.5rem 1rem;
+				border-radius: 8px;
+				font-size: 0.75rem;
+				color: #aaa;
+			}
+
+			.powered-by strong {
+				color: #f9ca24;
+			}
+
+            strong {
+                color: white;
+            }
+
+			@media (max-width: 968px) {
+				.profile-container {
+					flex-direction: column;
+				}
+
+				.profile-sidebar {
+					width: 100%;
+				}
+
+				.stats-container {
+					flex-wrap: wrap;
+					gap: 2rem;
+				}
+			}
+
+			/* Top Navigation */
+			.top-nav {
+				position: fixed;
+				top: 1rem;
+				right: 1rem;
+				z-index: 1000;
+			}
+
+			.nav-menu {
+				display: flex;
+				gap: 1.5rem;
+				background: rgba(0, 0, 0, 0.9);
+				padding: 1rem 2rem;
+				border-radius: 25px;
+				border: 1px solid rgba(249, 202, 36, 0.3);
+			}
+
+			.nav-menu a {
+				color: #aaa;
+				text-transform: uppercase;
+				font-size: 0.85rem;
+				font-weight: 600;
+				letter-spacing: 1px;
+				transition: all 0.3s;
+				text-decoration: none;
+			}
+
+			.nav-menu a:hover,
+			.nav-menu a.active {
+				color: #f9ca24;
+			}
+
+			body {
+				background: #1a1a1a;
+			}
+
+			/* Tab Content */
+			.tab-content {
+				display: none;
+			}
+
+			.tab-content.active {
+				display: block;
+				animation: fadeIn 0.5s;
+			}
+
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+					transform: translateY(10px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			.experience-item ul {
+				list-style: none;
+				padding-left: 0;
+			}
+
+			.experience-item ul li {
+				padding-left: 1.5rem;
+				position: relative;
+				margin-bottom: 1rem;
+			}
+
+			.experience-item ul li:before {
+				content: "▸";
+				color: #f9ca24;
+				position: absolute;
+				left: 0;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Top Navigation -->
+		<div class="top-nav">
+			<nav class="nav-menu">
+				<a href="#about" class="active tab-link" data-tab="about">About</a>
+				<a href="#projects" class="tab-link" data-tab="projects">Projects</a>
+				<a href="#experience" class="tab-link" data-tab="experience">Experience</a>
+				<a href="#certificates" class="tab-link" data-tab="certificates">Certificates</a>
+				<a href="#contact" class="tab-link" data-tab="contact">Contact</a>
+			</nav>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<div class="profile-container">
+				
+				<!-- Sidebar -->
+				<aside class="profile-sidebar">
+					<div class="profile-image">
+						<img src="images/image.png" alt="Harivandhana Ravikanti" />
+					</div>
+					
+					<h2 class="profile-name">Harivandhana Ravikanti</h2>
+					<p class="profile-title">Data Analyst</p>
+					
+					<div class="contact-info">
+						<div class="contact-item">
+							<div class="contact-icon">
+								<i class="fas fa-envelope"></i>
+							</div>
+							<div class="contact-details">
+								<div class="contact-label">Email</div>
+								<div class="contact-value">harivandhana.r@gmail.com</div>
+							</div>
+						</div>
+						
+						<div class="contact-item">
+							<div class="contact-icon">
+								<i class="fas fa-phone"></i>
+							</div>
+							<div class="contact-details">
+								<div class="contact-label">Phone</div>
+								<div class="contact-value">+91 7396505999</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="social-links">
+						<a href="https://www.linkedin.com/in/harivandhana-ravikanti-730220274/" target="_blank">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a href="https://github.com/HarivandhanaRavikanti" target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+					
+					<a href="assets/resume/Harivandhana Ravikanti_2.3yrs Exp_BI Developer.docx" download="Harivandhana_Ravikanti_Resume.docx" class="download-cv">
+						<span>Download Resume</span>
+						<i class="fas fa-download"></i>
+					</a>
+				</aside>
+
+				<!-- Main Content -->
+				<main class="profile-main">
+					
+					<!-- About Section -->
+					<section id="about" class="tab-content active">
+						<div class="section-header">
+							<h1 class="section-title">About Me</h1>
+						</div>
+						
+						<div class="about-text">
+							<p> Welcome to my portfolio! I’m a Data Analyst with over 2+ years of experience in hospitality analytics, passionate about transforming complex data into clear, actionable insights. I specialize in revenue, pricing, and performance analysis, helping businesses make confident, data-driven decisions.</p>
+                            <p>With strong expertise in Tableau, Power BI, SQL, and Excel, I design interactive dashboards, perform KPI and trend analysis, and deliver stakeholder-ready reports. </p>						
+							<p>Through hands-on industry experience and analytics projects, I’ve developed a strong foundation in SQL querying and visualization best practices. From building intuitive dashboards to uncovering patterns in large datasets, I enjoy turning raw data into meaningful business stories.</p>
+                            <p>This portfolio reflects my commitment to continuous learning, analytical thinking, and impactful data visualization. I’m excited to collaborate on new projects and contribute to data-driven success. Thank you for visiting—I look forward to connecting!</p>
+						</div>
+						
+						<div class="stats-container">
+							<div class="stat-box">
+								<div class="stat-icon">
+									<i class="fas fa-chart-bar"></i>
+								</div>
+								<div class="stat-number">3</div>
+								<div class="stat-label">Power BI Projects</div>
+							</div>
+							<div class="stat-box">
+								<div class="stat-icon">
+									<i class="fas fa-chart-bar"></i>
+								</div>
+								<div class="stat-number">1</div>
+								<div class="stat-label">Tableau Projects</div>
+							</div>
+							<div class="stat-box">
+								<div class="stat-icon">
+									<i class="fas fa-database"></i>
+								</div>
+								<div class="stat-number">1</div>
+								<div class="stat-label">SQL Project</div>
+							</div>
+						</div>
+						
+						<div class="section-header" style="margin-top: 4rem;">
+							<h2 class="section-title">Key Skills</h2>
+						</div>
+						
+						<div class="skills-grid">
+                            <span class="skill-badge">Tableau</span>
+                            <span class="skill-badge">Power BI</span>
+							<span class="skill-badge">SQL</span>
+                            <span class="skill-badge">Advanced Excel</span>
+							<span class="skill-badge">Dashboard Design</span>
+							<span class="skill-badge">Data Visualization</span>
+						</div>
+					</section>
+
+					<!-- Projects Section -->
+					<section id="projects" class="tab-content">
+						<div class="section-header">
+							<h1 class="section-title">My Projects</h1>
+						</div>
+						
+						<div class="about-text">
+							<p>Here are some of my key data analysis projects showcasing my expertise in Power BI, Tableau, Excel, and SQL. Each project demonstrates my ability to transform raw data into actionable insights.</p>
+						</div>
+
+						<div class="projects-grid" style="display: grid; gap: 2.5rem; margin-top: 2rem;">
+							
+							<!-- Project 1: E-commerce Sales Analysis -->
+							<div class="project-card" style="background: rgba(255, 255, 255, 0.03); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(249, 202, 36, 0.2); transition: all 0.3s;">
+								<div style="display: flex; align-items: flex-start; gap: 2rem;">
+									<div style="flex-shrink: 0;">
+										<div style="width: 80px; height: 80px; background: rgba(249, 202, 36, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 2px solid #f9ca24;">
+											<i class="fas fa-shopping-cart" style="color: #f9ca24; font-size: 2.5rem;"></i>
+										</div>
+									</div>
+									<div style="flex-grow: 1;">
+										<h3 style="color: #f9ca24; font-size: 1.5rem; margin-bottom: 0.5rem;">E-commerce Sales Analysis Dashboard</h3>
+										<p style="color: #aaa; margin-bottom: 1rem; font-size: 0.9rem;">Power BI | Excel | SQL | February 2023 - August 2023</p>
+										<p style="color: #ccc; line-height: 1.8; margin-bottom: 1rem;">Analyzed 99K+ e-commerce orders ($16M sales) across 4,100+ cities and 27 states using Power BI and Excel to identify key sales, delivery, and customer purchasing trends.</p>
+										<ul style="color: #ccc; line-height: 1.8; list-style: none; padding-left: 0;">
+											<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Assessed delivery timelines and shipping delays impact on customer review scores</li>
+											<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Built interactive KPI dashboards to visualize order value, delivery performance, and regional trends</li>
+											<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Highlighted delivery speed as a major driver of customer satisfaction</li>
+										</ul>
+										<div style="margin-top: 1.5rem;">
+											<a href="https://github.com/HarivandhanaRavikanti/Olist_Ecom_Excel_project" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #f9ca24; color: #000; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s;">
+												<i class="fab fa-github"></i>
+												<span>View on GitHub</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Project 2: COVID-19 Analysis -->
+							<div class="project-card" style="background: rgba(255, 255, 255, 0.03); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(249, 202, 36, 0.2); transition: all 0.3s;">
+								<div style="display: flex; align-items: flex-start; gap: 2rem;">
+									<div style="flex-shrink: 0;">
+										<div style="width: 80px; height: 80px; background: rgba(249, 202, 36, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 2px solid #f9ca24;">
+											<i class="fas fa-virus" style="color: #f9ca24; font-size: 2.5rem;"></i>
+										</div>
+									</div>
+									<div style="flex-grow: 1;">
+										<h3 style="color: #f9ca24; font-size: 1.5rem; margin-bottom: 0.5rem;">COVID-19 Case Analysis Dashboard</h3>
+										<p style="color: #aaa; margin-bottom: 1rem; font-size: 0.9rem;">Tableau | Excel | 2023</p>
+										<p style="color: #ccc; line-height: 1.8; margin-bottom: 1rem;">Analyzed state-wise COVID-19 cases, deaths, and demographic distributions using Excel and Tableau to provide comprehensive pandemic insights.</p>
+										<ul style="color: #ccc; line-height: 1.8; list-style: none; padding-left: 0;">
+											<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Built interactive Tableau dashboards showcasing vaccination types and dose counts</li>
+											<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Analyzed age-group vs case trends for insight-driven analysis</li>
+											<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Provided demographic distribution analysis across different states</li>
+										</ul>
+										<div style="margin-top: 1.5rem;">
+											<a href="https://public.tableau.com/app/profile/harivandhana.ravikanti/viz/Covid_19inIndiaAnalysis/Dashboard1" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #f9ca24; color: #000; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s;">
+												<i class="fab fa-tableau"></i>
+												<span>View Tableau Dashboard</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+                            						<div class="project-card" style="background: rgba(255, 255, 255, 0.03); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(249, 202, 36, 0.2); transition: all 0.3s;">
+							<div style="display: flex; align-items: flex-start; gap: 2rem;">
+								<div style="flex-shrink: 0;">
+									<div style="width: 80px; height: 80px; background: rgba(249, 202, 36, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 2px solid #f9ca24;">
+										<i class="fas fa-database" style="color: #f9ca24; font-size: 2.5rem;"></i>
+									</div>
+								</div>
+								<div style="flex-grow: 1;">
+									<h3 style="color: #f9ca24; font-size: 1.5rem; margin-bottom: 0.5rem;">Danny's Diner Case Study 👨‍🍳</h3>
+									<p style="color: #aaa; margin-bottom: 1rem; font-size: 0.9rem;">SQL | Data Analysis | Case Study #1</p>
+									<p style="color: #ccc; line-height: 1.8; margin-bottom: 1rem;">Analyzed customer data for Danny's Diner, a Japanese restaurant offering sushi, curry, and ramen. Solved 10 complex SQL questions to provide insights on visiting patterns, spending habits, and customer loyalty program optimization.</p>
+									<p style="color: #fff; font-weight: 600; margin-bottom: 0.5rem;">Key Analysis:</p>
+									<ul style="color: #ccc; line-height: 1.8; list-style: none; padding-left: 0;">
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Analyzed total spending and visit frequency patterns for each customer</li>
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Identified most popular menu items and customer preferences using window functions</li>
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Calculated loyalty points with 2x multiplier for sushi and new member bonuses</li>
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Used advanced SQL techniques: CTEs, JOINs, window functions (ROW_NUMBER, RANK), and CASE statements</li>
+									</ul>
+									<p style="color: #fff; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem;">Business Insights:</p>
+									<ul style="color: #ccc; line-height: 1.8; list-style: none; padding-left: 0;">
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Identified high-value customers for targeted retention strategies</li>
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Determined popular entry items to attract new customers</li>
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Recommended 2x points for new members in first week to boost engagement</li>
+									</ul>
+									<div style="margin-top: 1.5rem;">
+										<a href="https://github.com/HarivandhanaRavikanti/Danny-s-Diner-Case-Study---SQL" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #f9ca24; color: #000; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s;">
+											<i class="fab fa-github"></i>
+											<span>View SQL Solutions</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                         
+						<div class="project-card" style="background: rgba(255, 255, 255, 0.03); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(249, 202, 36, 0.2); transition: all 0.3s;">
+							<div style="display: flex; align-items: flex-start; gap: 2rem;">
+								<div style="flex-shrink: 0;">
+									<div style="width: 80px; height: 80px; background: rgba(249, 202, 36, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 2px solid #f9ca24;">
+										<i class="fas fa-chart-line" style="color: #f9ca24; font-size: 2.5rem;"></i>
+									</div>
+								</div>
+								<div style="flex-grow: 1;">
+									<h3 style="color: #f9ca24; font-size: 1.5rem; margin-bottom: 0.5rem;">CodeX Marketing Analysis</h3>
+									<p style="color: #aaa; margin-bottom: 1rem; font-size: 0.9rem;">Power BI | Market Research Analysis</p>
+									<p style="color: #ccc; line-height: 1.8; margin-bottom: 1rem;">Analyzed survey data from 10K respondents across 10 Indian cities for CodeX, a German beverage company launching their energy drink in India. Provided actionable insights to marketing team for data-driven decision making.</p>
+									<p style="color: #fff; font-weight: 600; margin-bottom: 0.5rem;">Key Insights:</p>
+									<ul style="color: #ccc; line-height: 1.8; list-style: none; padding-left: 0;">
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> 60% male consumers prefer energy drinks, age group 19-30 (55%) are primary consumers</li>
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Online ads have highest reach across all age groups; Super Markets (44%) and Online retailers (26%) are preferred purchase locations</li>
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Compact and Portable cans (40%) preferred; Price range of ₹50-100 most popular</li>
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> CodeX achieved 3.3 average rating with 10% market share; Recommended celebrity endorsements and Tier 2 city expansion</li>
+									</ul>
+									<div style="margin-top: 1.5rem;">
+										<a href="https://github.com/HarivandhanaRavikanti/CodeX_Marketing_Analysis" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #f9ca24; color: #000; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s;">
+											<i class="fab fa-github"></i>
+											<span>View on GitHub</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="project-card" style="background: rgba(255, 255, 255, 0.03); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(249, 202, 36, 0.2); transition: all 0.3s;">
+							<div style="display: flex; align-items: flex-start; gap: 2rem;">
+								<div style="flex-shrink: 0;">
+									<div style="width: 80px; height: 80px; background: rgba(249, 202, 36, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 2px solid #f9ca24;">
+										<i class="fas fa-shopping-bag" style="color: #f9ca24; font-size: 2.5rem;"></i>
+									</div>
+								</div>
+								<div style="flex-grow: 1;">
+									<h3 style="color: #f9ca24; font-size: 1.5rem; margin-bottom: 0.5rem;">Blinkit Sales Analysis</h3>
+									<p style="color: #aaa; margin-bottom: 1rem; font-size: 0.9rem;">Power BI | Quick Commerce Analytics</p>
+									<p style="color: #ccc; line-height: 1.8; margin-bottom: 1rem;">Analyzed Blinkit grocery data to extract business insights using various KPIs and visualizations in Power BI. Blinkit is a quick commerce platform providing instant delivery of groceries and household items.</p>
+									<p style="color: #fff; font-weight: 600; margin-bottom: 0.5rem;">Key Metrics & Analysis:</p>
+									<ul style="color: #ccc; line-height: 1.8; list-style: none; padding-left: 0;">
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Tracked Total Sales, Average Sales, Number of Items, and Average Rating metrics</li>
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Analyzed metrics by Outlet Type, Fat Content, and Location Type</li>
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Created sales profiling over time and segmented analysis by Outlet Size</li>
+										<li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #f9ca24;">▸</span> Utilized Pie charts, Donut charts, Bar charts, Slicers, Column charts, Line charts, and Table visuals for comprehensive insights</li>
+									</ul>
+									<div style="margin-top: 1.5rem;">
+										<a href="https://github.com/HarivandhanaRavikanti/Blinkit-Sales-Analysis" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #f9ca24; color: #000; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s;">
+											<i class="fab fa-github"></i>
+											<span>View on GitHub</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+                    </div>
+
+						<div class="section-header" style="margin-top: 4rem;">
+							<h2 class="section-title">Technical Expertise</h2>
+						</div>
+						
+						<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem;">
+							<div style="background: rgba(255, 255, 255, 0.03); padding: 2rem; border-radius: 12px; border-left: 4px solid #f9ca24;">
+								<h4 style="color: #f9ca24; margin-bottom: 1rem; font-size: 1.2rem;">
+									<i class="fas fa-chart-bar" style="margin-right: 0.5rem;"></i>
+									Tableau
+								</h4>
+								<p style="color: #ccc; text-align: center; line-height: 1.6; font-size: 0.95rem;">LOD Expressions, Parameters, Actions, Calculated Fields, Sets, Context Filters, Interactive Dashboards</p>
+							</div>
+
+							<div style="background: rgba(255, 255, 255, 0.03); padding: 2rem; border-radius: 12px; border-left: 4px solid #f9ca24;">
+								<h4 style="color: #f9ca24; margin-bottom: 1rem; font-size: 1.2rem;">
+									<i class="fas fa-chart-pie" style="margin-right: 0.5rem;"></i>
+									Power BI
+								</h4>
+								<p style="color: #ccc; text-align: center; line-height: 1.6; font-size: 0.95rem;">Data Modeling, DAX Measures, KPIs, Interactive Visualizations, Drill-down Reports</p>
+							</div>
+
+							<div style="background: rgba(255, 255, 255, 0.03); padding: 2rem; border-radius: 12px; border-left: 4px solid #f9ca24;">
+								<h4 style="color: #f9ca24; margin-bottom: 1rem; font-size: 1.2rem;">
+									<i class="fas fa-database" style="margin-right: 0.5rem;"></i>
+									SQL
+								</h4>
+								<p style="color: #ccc; text-align: center; line-height: 1.6; font-size: 0.95rem;">Complex Joins, Aggregations, CTEs, Data Cleaning, Query Optimization</p>
+							</div>
+
+							<div style="background: rgba(255, 255, 255, 0.03); padding: 2rem; border-radius: 12px; border-left: 4px solid #f9ca24;">
+								<h4 style="color: #f9ca24; margin-bottom: 1rem; font-size: 1.2rem;">
+									<i class="fas fa-file-excel" style="margin-right: 0.5rem;"></i>
+									Excel
+								</h4>
+								<p style="color: #ccc; text-align: center; line-height: 1.6; font-size: 0.95rem;">Pivot Tables, Power Query, Advanced Lookups, Data Validation</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- Experience Section -->
+					<section id="experience" class="tab-content">
+						<div class="section-header">
+							<h1 class="section-title">Professional Experience</h1>
+						</div>
+						
+						<div class="experience-item">
+							<h3 style="color: #f9ca24; font-size: 1.5rem; margin-bottom: 0.5rem;">RevPeak, Hyderabad</h3>
+							<p style="color: #aaa; margin-bottom: 0.5rem;">Data Analyst | October 2023 - Present</p>
+							<ul style="color: #ccc; line-height: 1.8; margin-top: 1rem;">
+								<li>Developed highly interactive Tableau dashboards using LOD expressions, parameters, filters, actions, and context filters to support pricing and revenue decision-making</li>
+								<li>Conducted weekly and monthly revenue analysis on Occupancy %, ADR (Average Daily Rate), and RevPAR (Revenue Per Available Room), recommending optimal pricing strategies that contributed to a 17% increase in revenue</li>
+								<li>Analyzed compset pricing and market trends to suggest competitive room rates, enabling hotels to achieve revenue targets while improving market positioning</li>
+								<li>Improved hotel performance year-over-year by supporting strategies that increased Occupancy % and ADR compared to previous year</li>
+								<li>Collaborated with stakeholders and internal teams to translate pricing insights into actionable recommendations</li>
+								<li>Ensured data accuracy and validation across dashboards and reports before delivery to stakeholders and clients</li>
+							</ul>
+						</div>
+
+						<div class="experience-item" style="margin-top: 3rem;">
+							<h3 style="color: #f9ca24; font-size: 1.5rem; margin-bottom: 0.5rem;">Ai Variant (Internship), Hyderabad</h3>
+							<p style="color: #aaa; margin-bottom: 0.5rem;">Project Experience | February 2023 - August 2023</p>
+							<ul style="color: #ccc; line-height: 1.8; margin-top: 1rem;">
+								<li><strong>E-commerce Sales Analysis:</strong> Analyzed 99K+ e-commerce orders ($16M sales) across 4,100+ cities and 27 states using Power BI and Excel to identify key sales, delivery, and customer purchasing trends</li>
+								<li>Assessed delivery timelines and shipping delays impact on customer review scores using Power BI</li>
+								<li>Built interactive KPI dashboards in Power BI to visualize order value, delivery performance, ratings, and regional trends</li>
+								<li><strong>COVID-19 Case Analysis Dashboard:</strong> Analyzed state-wise COVID-19 cases, deaths, and demographic distributions using Excel and Tableau</li>
+								<li>Built interactive Tableau dashboards showcasing vaccination types, dose counts, and age-group vs case trends</li>
+							</ul>
+						</div>
+
+						<div class="experience-item" style="margin-top: 3rem;">
+							<h3 style="color: #f9ca24; font-size: 1.5rem; margin-bottom: 0.5rem;">IBM India Pvt Ltd, Pune</h3>
+							<p style="color: #aaa; margin-bottom: 0.5rem;">SAP MM Consultant | September 2017 - April 2019</p>
+							<ul style="color: #ccc; line-height: 1.8; margin-top: 1rem;">
+								<li>Worked for Volkswagen Client - Responsible for material and master data report analysis and management</li>
+								<li>Created and ran jobs related to Master data transfer including material, vendor, and service activity data</li>
+								<li>Worked for Toyota Inc, India (TCI) - Experience in dealing with PR, PO, GR, and Invoice processing</li>
+								<li>Collaborated with functional teams and clients to work on business requirements and resolve issues</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- Certificates Section -->
+					<section id="certificates" class="tab-content">
+						<div class="section-header">
+							<h1 class="section-title">Certifications & Achievements</h1>
+						</div>
+						
+						<div class="about-text">
+							<p>Professional certifications and achievements that demonstrate my commitment to continuous learning and excellence in data analytics.</p>
+						</div>
+						
+						<div class="certificates-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2.5rem; margin-top: 2.5rem;">
+							
+							<!-- Certificate 1: Data Analytics Internship -->
+							<div class="cert-card" style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(249, 202, 36, 0.2); transition: all 0.3s;">
+								<div style="overflow: hidden; border-radius: 8px; margin-bottom: 1.5rem; border: 2px solid rgba(249, 202, 36, 0.3);">
+									<img src="images/certificates/Certificate_of_Internship_DA_page-0001.jpg" alt="Data Analytics Internship Certificate" style="width: 100%; height: auto; display: block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								</div>
+								<h3 style="color: #f9ca24; font-size: 1.3rem; margin-bottom: 0.5rem;">Data Analytics Internship</h3>
+								<p style="color: #aaa; margin-bottom: 0.5rem;">Ai Variant</p>
+								<p style="color: #ccc; line-height: 1.6;">Comprehensive internship program covering data analysis, visualization, and business intelligence tools.</p>
+							</div>
+
+							<!-- Certificate 2: Data Analyst ExcelR -->
+							<div class="cert-card" style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(249, 202, 36, 0.2); transition: all 0.3s;">
+								<div style="overflow: hidden; border-radius: 8px; margin-bottom: 1.5rem; border: 2px solid rgba(249, 202, 36, 0.3);">
+									<img src="images/certificates/DA-ExcelR-Mrs. Harivandhana Ravikanti_page-0001.jpg" alt="Data Analyst Certificate" style="width: 100%; height: auto; display: block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								</div>
+								<h3 style="color: #f9ca24; font-size: 1.3rem; margin-bottom: 0.5rem;">Data Analyst Certificate</h3>
+								<p style="color: #aaa; margin-bottom: 0.5rem;">ExcelR Solutions</p>
+								<p style="color: #ccc; line-height: 1.6;">Professional certification in data analysis, covering SQL, Excel, and analytical methodologies.</p>
+							</div>
+
+							<!-- Certificate 3: IBM Best Graduate Hire -->
+							<div class="cert-card" style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(249, 202, 36, 0.2); transition: all 0.3s;">
+								<div style="overflow: hidden; border-radius: 8px; margin-bottom: 1.5rem; border: 2px solid rgba(249, 202, 36, 0.3);">
+									<img src="images/certificates/IBM_Best_GH_Certificate_page-0001.jpg" alt="IBM Best Graduate Hire Award" style="width: 100%; height: auto; display: block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								</div>
+								<h3 style="color: #f9ca24; font-size: 1.3rem; margin-bottom: 0.5rem;">🏆 "Young and Impactful - Best Graduate Hire"</h3>
+								<p style="color: #aaa; margin-bottom: 0.5rem;">IBM India</p>
+								<p style="color: #ccc; line-height: 1.6;">Recognition award for outstanding performance and contribution as a graduate hire at IBM.</p>
+							</div>
+
+							<!-- Certificate 4: IBM Data Visualization -->
+							<div class="cert-card" style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(249, 202, 36, 0.2); transition: all 0.3s;">
+								<div style="overflow: hidden; border-radius: 8px; margin-bottom: 1.5rem; border: 2px solid rgba(249, 202, 36, 0.3);">
+									<img src="images/certificates/IBM_Data Visualization_ExcelR_Harivandhana_page-0001.jpg" alt="Data Visualization Certificate" style="width: 100%; height: auto; display: block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								</div>
+								<h3 style="color: #f9ca24; font-size: 1.3rem; margin-bottom: 0.5rem;">Data Visualization</h3>
+								<p style="color: #aaa; margin-bottom: 0.5rem;">IBM Developer Skills Network</p>
+								<p style="color: #ccc; line-height: 1.6;">Advanced certification in data visualization techniques and best practices.</p>
+							</div>
+
+						</div>
+
+						<div class="section-header" style="margin-top: 4rem;">
+							<h2 class="section-title">Education</h2>
+						</div>
+						
+						<div class="cert-card" style="background: rgba(255, 255, 255, 0.03); padding: 2rem; border-radius: 12px; border-left: 4px solid #f9ca24; margin-top: 2rem;">
+							<h3 style="color: #f9ca24; font-size: 1.3rem; margin-bottom: 0.5rem;">B.Tech, Electrical and Electronics Engineering</h3>
+							<p style="color: #aaa; margin-bottom: 0.5rem;">Bhoj Reddy Engineering College for Women, Hyderabad, Telangana</p>
+							<p style="color: #ccc;">Graduated: June 2017</p>
+						</div>
+					</section>
+
+					<!-- Contact Section -->
+					<section id="contact" class="tab-content">
+						<div class="section-header">
+							<h1 class="section-title">Get In Touch</h1>
+						</div>
+						
+						<div class="about-text">
+							<p>I'm always interested in hearing about new opportunities, collaborations, or just connecting with fellow data enthusiasts. Feel free to reach out through any of the following channels:</p>
+						</div>
+
+						<div class="contact-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 3rem;">
+							<div class="contact-box" style="background: rgba(255, 255, 255, 0.03); padding: 2rem; border-radius: 12px; text-align: center; border: 1px solid rgba(249, 202, 36, 0.2);">
+								<div class="contact-icon" style="width: 70px; height: 70px; background: #f9ca24; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+									<i class="fas fa-envelope" style="color: #000; font-size: 2rem;"></i>
+								</div>
+								<h3 style="color: #f9ca24; margin-bottom: 0.5rem;">Email</h3>
+								<p style="color: #ccc; text-align: center;">harivandhana.296@gmail.com</p>
+							</div>
+
+							<div class="contact-box" style="background: rgba(255, 255, 255, 0.03); padding: 2rem; border-radius: 12px; text-align: center; border: 1px solid rgba(249, 202, 36, 0.2);">
+								<div class="contact-icon" style="width: 70px; height: 70px; background: #f9ca24; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+									<i class="fas fa-phone" style="color: #000; font-size: 2rem;"></i>
+								</div>
+								<h3 style="color: #f9ca24; margin-bottom: 0.5rem;">Phone</h3>
+								<p style="color: #ccc; text-align: center;">+91 7396505999</p>
+							</div>  
+
+							<div class="contact-box" style="background: rgba(255, 255, 255, 0.03); padding: 2rem; border-radius: 12px; text-align: center; border: 1px solid rgba(249, 202, 36, 0.2);">
+								<div class="contact-icon" style="width: 70px; height: 70px; background: #f9ca24; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+									<i class="fas fa-map-marker-alt" style="color: #000; font-size: 2rem;"></i>
+								</div>
+								<h3 style="color: #f9ca24; margin-bottom: 0.5rem;">Location</h3>
+								<p style="color: #ccc; text-align: center;">Ameenpur,Hyderabad, Telangana, India</p>
+							</div>
+						</div>
+
+						<div class="social-section" style="margin-top: 4rem; text-align: center;">
+							<h3 style="color: #fff; margin-bottom: 2rem; font-size: 1.5rem;">Connect on Social Media</h3>
+							<div style="display: flex; gap: 2rem; justify-content: center;">
+								<a href="https://www.linkedin.com/in/harivandhana-ravikanti-730220274/" target="_blank" style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; text-decoration: none;">
+									<div style="width: 80px; height: 80px; background: #0077b5; border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+										<i class="fab fa-linkedin" style="color: #fff; font-size: 2.5rem;"></i>
+									</div>
+									<span style="color: #ccc;">LinkedIn</span>
+								</a>
+								
+								<a href="https://github.com/HarivandhanaRavikanti" target="_blank" style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; text-decoration: none;">
+									<div style="width: 80px; height: 80px; background: #333; border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+										<i class="fab fa-github" style="color: #fff; font-size: 2.5rem;"></i>
+									</div>
+									<span style="color: #ccc;">GitHub</span>
+								</a>
+							</div>
+						</div>
+					</section>
+
+				</main>
+
+			</div>
+
+			<!-- Copyright -->
+			<div id="copyright" style="margin-top: 2rem;">
+				<ul>
+					<li>&copy; 2026 Harivandhana Ravikanti</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Tab Switching Script -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const tabLinks = document.querySelectorAll('.tab-link');
+				const tabContents = document.querySelectorAll('.tab-content');
+
+				// Function to switch tabs
+				function switchTab(targetId) {
+					// Remove active class from all tabs and contents
+					tabLinks.forEach(link => link.classList.remove('active'));
+					tabContents.forEach(content => content.classList.remove('active'));
+
+					// Add active class to clicked tab and corresponding content
+					const targetContent = document.getElementById(targetId);
+					if (targetContent) {
+						targetContent.classList.add('active');
+						const activeLink = document.querySelector(`[data-tab="${targetId}"]`);
+						if (activeLink) {
+							activeLink.classList.add('active');
+						}
+					}
+				}
+
+				// Add click event listeners to tab links
+				tabLinks.forEach(link => {
+					link.addEventListener('click', function(e) {
+						const targetTab = this.getAttribute('data-tab');
+						if (targetTab) {
+							e.preventDefault();
+							switchTab(targetTab);
+							
+							// Smooth scroll to top of content
+							document.querySelector('.profile-main').scrollIntoView({ 
+								behavior: 'smooth',
+								block: 'start'
+							});
+						}
+					});
+				});
+
+				// Handle hash in URL on page load
+				if (window.location.hash) {
+					const hash = window.location.hash.substring(1);
+					switchTab(hash);
+				}
+			});
+		</script>
+
+	</body>
+</html>
