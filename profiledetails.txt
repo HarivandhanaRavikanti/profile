@@ -1,0 +1,49 @@
+HARIVANDHANA RAVIKANTI				         |+91-7396505999 | Gmail | LinkedIn | Github | Profile
+
+BI Developer with 2+ years of experience in hospitality analytics, specializing in revenue, pricing, and performance analysis. Strong expertise in Tableau, SQL, and Excel to build KPI dashboards and deliver stakeholder-ready insights. Proven impact in driving revenue growth through Occupancy %, ADR, RevPAR, and compset pricing analysis.
+ 
+•	BI & Visualization: Tableau (LOD, Parameters, Actions, charts, Bookmarks), Power BI (Data Modeling, DAX Measures, KPIs, charts)
+•	Data Analysis & SQL: SQL Joins, Aggregations, CTEs, Data Cleaning, EDA
+•	Excel: Pivot Tables, Power Query, Lookups, Data Validation, Reporting Automation
+•	Programming: Python – Data analysis fundamentals
+
+RevPeak, Hyderabad											10/2023 – Present
+•	BI Developer – Tableau	
+•	Developed highly interactive Tableau dashboards using calculated fields, LOD expressions, parameters, filters, actions, sets, and context filters to support pricing and revenue decision-making.
+•	Conducted weekly and monthly revenue analysis on occupancy %, ADR, and RevPAR, recommending optimal pricing strategies that contributed to a 17% increase in revenue.
+•	Analyzed compset pricing and market trends to suggest competitive room rates, enabling hotels to achieve revenue targets while improving market positioning.
+•	Improved hotel performance year-over-year by supporting strategies that increased Occupancy % and ADR compared to the previous year.
+•	Collaborated with stakeholders and internal teams to translate pricing insights into actionable recommendations, supporting data-driven decision-making for multiple hotel clients.
+•	Ensured data accuracy and validation across dashboards and reports before delivery to stakeholders and clients.
+Ai Variant (Internship), Hyderabad (Remote)
+     Project Experience:
+•	Ecom Sales Analysis [Power BI | Excel | SQL] Github 	02/2023 - 08/2023
+	
+•	Analyzed 99K+ e-commerce orders ($16M sales) across 4,100+ cities and 27 states using Power BI and Excel to identify key sales, delivery, and customer purchasing trends.
+
+•	Assessed delivery timelines and shipping delays and their impact on customer review scores using Power BI, highlighting delivery speed as a major driver of customer satisfaction.
+
+•	Built interactive KPI dashboards in Power BI to visualize order value, delivery performance, ratings, and regional trends, enabling clear business insights.
+
+•	COVID-19 Case Analysis Dashboard [Tableau | Excel] Github
+
+•	Analyzed state-wise COVID-19 cases, deaths, and demographic distributions using Excel and Tableau.
+
+•	Built interactive Tableau dashboards showcasing vaccination types, dose counts, and age-group vs case trends for insight-driven analysis.
+
+IBM India Pvt Ltd. Pune, India	
+•	SAP MM Consultant											        09/2017 – 04/2019
+
+•	Worked for Volkswagen Client. Responsible for material and master data report analysis and management, resolve irregularities if any before updating systems. Experience in creating and running jobs related to Master data transfer. 
+•	Worked on Material transfer, Item category, Master Data- Material, Vendor, Service activity, Purchase info record and IDOCS. 
+•	Worked for Toyota Inc, India (TCI) - Experience in dealing with PR, PO, GR, Invoice. Basic knowledge about HR data modification is related to approvals. Analyzing the requirements and dealing with tickets in a time bound manner. 
+•	Collaborated with other functional teams, clients to work on business requirements and resolve the issues
+
+
+•	Data Analytics Internship [Certificate] from Ai Variant
+•	Data Visualization from IBM Developer Skills Network[Certificate]
+•	Data Analyst [Certificate] from ExcelR Solutions
+•	“Young and Impactful - Best Graduate Hire” award [certificate] from IBM
+
+•	Bhoj Reddy Engineering College for Women, Hyderabad, Telangana	June,2017
+B.Tech., Electrical and Electronics Engineering
